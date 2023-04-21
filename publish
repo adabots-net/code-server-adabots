@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -e
+source version
+docker login
+docker push "adabots/code-server:$VERSION"
+docker push adabots/code-server:latest
