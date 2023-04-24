@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+IMAGE="adabots/code-server"
+source version
+docker run -it ${IMAGE}:${VERSION}
